@@ -15,7 +15,8 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin-top: 160px;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -187,7 +188,7 @@ button.main4:hover {
 
 .rooms {
     position: relative;
-    left: -250px;
+    left: -440px;
 }
 
 header {
@@ -199,7 +200,13 @@ header {
 .header-content {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-left: 100px;
+}
+
+.header-room {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
 }
 
 header h1 {
@@ -290,3 +297,183 @@ th {
 td {
     font-size: 16px;
 }
+
+
+
+
+
+
+/* Основные стили футера */
+.custom-footer {
+    background-color: #111;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.footer-icons a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-icons {
+        margin-top: 10px;
+    }
+}
+
+
+
+/* Центрирование логотипа */
+.custom-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+}
+
+
+
+
+
+
+
+
+/* Стили для изображений кабинетов */
+.room-image img {
+    width: 100%;
+    max-width: 300px; /* Устанавливаем максимальную ширину для изображений */
+    border-radius: 8px; /* Добавляем закругленные углы */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+
+
+
+
+
+/* Стили для изображений комнат */
+.room-img {
+    width: 100%;
+    max-width: 200px; /* Ограничиваем размер изображений */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Отступ снизу от изображения */
+}
+
+/* Центрирование и стилизация текста */
+.button-container {
+    text-align: center;
+    margin-bottom: 20px; /* Отступ снизу для каждой кнопки */
+}
+
+.button-container p {
+    font-size: 16px;
+    color: #007bff;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+
+
+
+
+/* Контейнер карусели */
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px; /* Максимальная ширина карусели */
+    margin: 0 auto;
+    overflow-x: auto; /* Добавляем горизонтальную прокрутку */
+    white-space: nowrap; /* Отключаем перенос строк для элементов карусели */
+    max-width: 900px; /* Максимальная ширина карусели */
+    scroll-behavior: smooth; /* Плавная прокрутка */
+}
+
+/* Элементы карусели */
+.carousel {
+    display: inline-block; /* Включаем inline-block, чтобы элементы выстраивались в линию */
+}
+
+.carousel-item {
+    display: inline-block; /* Каждый элемент выравнивается по горизонтали */
+    width: 300px; /* Ширина элемента */
+    margin-right: 20px; /* Отступ между элементами */
+    min-width: 300px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-width: 300px; /* Устанавливаем максимальную ширину изображения */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Индикатор прокрутки */
+.scrollbar {
+    height: 5px;
+    background-color: #ddd;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.scrollbar-thumb {
+    height: 100%;
+    width: 20%;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+
+/* Кнопка назад */
+.back-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}
+
+
