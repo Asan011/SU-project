@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -15,27 +16,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 300px;
-    margin-bottom: 100px;
-}
-
-.main-container {
-    text-align: center;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 210px;
-    margin-bottom: 100px;
-}
-
-.floor1-container {
-    text-align: center;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 240px;
+    margin-top: 160px;
     margin-bottom: 100px;
 }
 
@@ -66,6 +47,7 @@ button:hover {
     background-color: #740526;
 }
 
+
 /*buttons img*/
 button.main {
     padding: 100px 120px;
@@ -80,7 +62,7 @@ button.main {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 150px;
+    width: 150px; 
     height: 150px;
 }
 
@@ -124,8 +106,8 @@ button.main3 {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 150px;
-    height: 150px;
+    width: 150px; 
+    height: 150px; 
 }
 
 button.main3:hover {
@@ -146,7 +128,7 @@ button.main4 {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 150px;
+    width: 150px; 
     height: 150px;
 }
 
@@ -154,6 +136,7 @@ button.main4:hover {
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
 }
+
 
 .info {
     text-align: left;
@@ -202,6 +185,7 @@ button.main4:hover {
 #file-upload {
     display: none;
 }
+
 
 .rooms {
     position: relative;
@@ -265,14 +249,25 @@ header h1 {
     font-size: 16px;
     font-weight: bold;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
 }
 
+
+
+
+
 .icon {
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-    vertical-align: middle;
+    width: 40px; /* Ширина иконки */
+    height: 40px; /* Высота иконки */
+    margin-left: 10px; /* Отступ слева от текста */
+    vertical-align: middle; /* Выравнивание иконки по середине текста */
+}
+
+
+
+.image {
+    text-align: center;
+    position: relative;
 }
 
 .date {
@@ -280,7 +275,9 @@ header h1 {
     color: #333;
     margin-top: 10px;
 }
+    
 
+/* table */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -302,6 +299,12 @@ td {
     font-size: 16px;
 }
 
+
+
+
+
+
+/* Основные стили футера */
 .custom-footer {
     background-color: #111;
     padding: 40px 0;
@@ -337,6 +340,7 @@ td {
     filter: invert(100%);
 }
 
+/* Для мобильных устройств */
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
@@ -348,6 +352,9 @@ td {
     }
 }
 
+
+
+/* Центрирование логотипа */
 .custom-logo {
     position: absolute;
     left: 50%;
@@ -355,24 +362,39 @@ td {
     top: 20px;
 }
 
+
+
+
+
+
+
+
+/* Стили для изображений кабинетов */
 .room-image img {
     width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    max-width: 300px; /* Устанавливаем максимальную ширину для изображений */
+    border-radius: 8px; /* Добавляем закругленные углы */
+    margin-bottom: 20px; /* Отступ снизу */
 }
 
+
+
+
+
+
+/* Стили для изображений комнат */
 .room-img {
     width: 100%;
-    max-width: 200px;
+    max-width: 200px; /* Ограничиваем размер изображений */
     height: auto;
     border-radius: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Отступ снизу от изображения */
 }
 
+/* Центрирование и стилизация текста */
 .button-container {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Отступ снизу для каждой кнопки */
 }
 
 .button-container p {
@@ -382,37 +404,47 @@ td {
     margin: 0;
 }
 
+
+
+
+
+
+
+
 .carousel-wrapper {
     position: relative;
     overflow: hidden;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    overflow-x: auto;
-    white-space: nowrap;
-    scroll-behavior: smooth;
+    overflow-x: auto; 
+    white-space: nowrap; 
+    max-width: 900px;
+    scroll-behavior: smooth; 
 }
 
 .carousel {
-    display: inline-block;
+    display: inline-block; 
 }
 
 .carousel-item {
-    display: inline-block;
-    width: 300px;
-    margin-right: 20px;
+    display: inline-block; 
+    width: 300px; 
+    margin-right: 20px; 
     min-width: 300px;
+    margin-right: 20px;
     flex-shrink: 0;
     text-align: center;
 }
 
 .carousel-item img {
     width: 100%;
-    max-width: 300px;
+    max-width: 300px; 
     height: auto;
     border-radius: 10px;
 }
 
+/* Индикатор прокрутки */
 .scrollbar {
     height: 5px;
     background-color: #ddd;
@@ -428,6 +460,7 @@ td {
     transition: transform 0.5s ease;
 }
 
+/* Кнопка назад */
 .back-btn {
     display: block;
     margin: 20px auto;
@@ -442,103 +475,3 @@ td {
 .back-btn:hover {
     background-color: #0056b3;
 }
-
-
-/* Медиазапросы для мобильных устройств */
-@media (max-width: 768px) {
-    .buttons {
-        flex-direction: column; /* Вертикальное расположение кнопок */
-    }
-    .main-container {
-        margin-top: 1200px;
-        margin-bottom: 100px;
-    }
-    .logo {
-        margin-left: -85px;
-    }
-    .custom-footer {
-        padding: 20px 0; /* Уменьшение внутреннего отступа */
-        text-align: center;
-    }
-
-    .footer-content {
-        flex-direction: column; /* Выровнять все по центру вертикально */
-        justify-content: center;
-        align-items: center; /* Центрирование элементов футера */
-    }
-
-    .footer-icons {
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap; /* Упорядочить иконки в несколько строк при необходимости */
-        gap: 15px; /* Отступы между иконками */
-    }
-
-    /* Исправляем логотип M205 */
-    .custom-logo {
-        position: static; /* Убираем абсолютное позиционирование */
-        margin-top: 10px;
-        font-size: 18px; /* Уменьшаем размер текста логотипа для мобильных */
-    }
-
-    .footer-content p {
-        margin-bottom: 10px; /* Добавляем отступ снизу для текста */
-        font-size: 14px; /* Уменьшаем размер шрифта на мобильных */
-    }
-
-    .floor1-container {
-        margin-top: 1050px;
-        margin-bottom: 100px;
-    }
-    .carousel-wrapper {
-        display: none; /* Отключаем карусель на мобильных */
-    }
-
-    /* Вертикальное расположение кнопок на втором этаже */
-    .mobile-buttons {
-        display: flex;
-        flex-direction: column; /* Вертикальное расположение кнопок */
-        align-items: center;
-        gap: 20px;
-    }
-
-    /* Стили для кнопок на мобильной версии */
-    button.main2 {
-        width: 100%; /* Кнопки на всю ширину */
-        max-width: 300px; /* Ограничиваем максимальную ширину */
-        height: 150px;
-        margin: 10px 0; /* Отступы между кнопками */
-        text-align: center;
-        background-size: cover;
-        background-position: center;
-    }
-
-    /* Центрирование текста под кнопками */
-    .button-container p {
-        text-align: center;
-    }
-    .buttons-mobile-buttons {
-        margin-top: 1600px;
-        margin-bottom: 100px;
-    }
-    .buttons-mobile-buttons3 {
-        margin-top: 1050px;
-        margin-bottom: 100px;
-    }
-    .buttons-mobile-buttons4 {
-        margin-top: 1550px;
-        margin-bottom: 100px;
-    }
-}
-
-
-/* Для ПК версии карусель будет активна, скрываем мобильные кнопки */
-@media (min-width: 769px) {
-    .mobile-buttons {
-        display: none; /* Скрываем мобильные кнопки на ПК */
-    }
-    .carousel-wrapper {
-        display: block; /* Включаем карусель на ПК */
-    }
-}   
