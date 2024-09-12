@@ -535,10 +535,17 @@ td {
 
 /* Для ПК версии карусель будет активна, скрываем мобильные кнопки */
 @media (min-width: 769px) {
-    .mobile-buttons {
+    .buttons-mobile-buttons {
+        display: none; /* Скрываем мобильные кнопки на ПК */
+    }
+    .buttons-mobile-buttons3 {
+        display: none; /* Скрываем мобильные кнопки на ПК */
+    }
+    .buttons-mobile-buttons4 {
         display: none; /* Скрываем мобильные кнопки на ПК */
     }
     .carousel-wrapper {
         display: block; /* Включаем карусель на ПК */
     }
 }   
+
