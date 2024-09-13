@@ -282,9 +282,10 @@ header h1 {
 }
 
 table {
-    width: 100%;
+    min-width: 600px;
+    width: auto;
     border-collapse: collapse;
-    margin-bottom: 20px;
+
 }
 
 th, td {
@@ -385,8 +386,8 @@ td {
 .carousel-wrapper {
     position: relative;
     overflow: hidden;
-    width: 100%;
-    max-width: 900px;
+    /* width: 100%;
+    max-width: 900px; */
     margin: 0 auto;
     overflow-x: auto;
     white-space: nowrap;
@@ -549,3 +550,149 @@ td {
     }
 }   
 
+
+
+
+@media (max-width: 768px) {
+    /* Центрируем и добавляем отступы для логотипа */
+    .header-room {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px; /* Отступ под логотипом */
+    }
+
+    /* Отступы для таблицы на мобильных */
+    .info {
+        margin-top: 400px; /* Отступ между логотипом и таблицей */
+        width: 100%; /* Ширина таблицы */
+    }
+
+    /* Стиль для таблицы, чтобы она не сливалась с логотипом */
+    table {
+        /* width: 100%; Таблица будет растягиваться на всю ширину экрана */
+        margin-bottom: 20px; /* Отступ под таблицей */
+        font-size: 14px; /* Размер шрифта для мобильных устройств */
+        border-collapse: collapse;
+    }
+
+    /* Центрируем текст в таблице для мобильных */
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    /* Делаем контейнеры вертикальными */
+    .content {
+        display: flex;
+        flex-direction: column; /* Вертикальное расположение всех элементов */
+        align-items: center; /* Центрирование элементов */
+    }
+
+    /* Аватар и форма для прикрепления документов */
+    .image {
+        width: 100%; /* Аватар и форма будут занимать всю ширину */
+        display: flex;
+        flex-direction: column; /* Вертикальное расположение аватара и формы */
+        align-items: center; /* Центрируем их по центру */
+        margin-top: 20px; /* Отступ сверху для отделения от таблицы */
+    }
+
+    /* Устанавливаем ширину таблицы */
+    .info {
+        margin-right: -150px;
+        width: 100%;
+        margin-bottom: 20px; /* Отступ под таблицей */
+    }
+
+    /* Таблица */
+    table {
+        width: 100%; /* Таблица будет занимать всю ширину экрана */
+    }
+
+    /* Размер аватарки */
+    .avatar {
+        max-width: 100px; /* Устанавливаем максимальную ширину аватарки */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    /* Отступ для кнопки загрузки */
+    .upload-form {
+        margin-top: 10px;
+    }
+
+    /* Карусельный контейнер для таблицы */
+    .carousel-wrapper {
+        overflow-x: auto;
+        white-space: nowrap;
+
+    }
+
+    .carousel {
+        display: inline-block;
+        white-space: nowrap; /* Не переносим элементы */
+    }
+
+    /* Минимальная ширина таблицы для прокрутки */
+    table {
+        min-width: 600px; /* Задаем минимальную ширину для карусели */
+        width: auto;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    /* Контейнер для карусели */
+    .carousel-wrapper {
+        overflow-x: auto;
+        white-space: nowrap;
+        
+    }
+
+    .carousel {
+        display: inline-block;
+        white-space: nowrap; /* Не переносим элементы */
+    }
+
+    /* Минимальная ширина таблицы для прокрутки */
+    table {
+        min-width: 600px; /* Задаем минимальную ширину для карусели */
+        width: auto;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    /* Аватар и форма для прикрепления документов */
+    .image {
+        width: 100%; /* Аватар и форма будут занимать всю ширину */
+        display: flex;
+        flex-direction: column; /* Вертикальное расположение аватара и формы */
+        align-items: center; /* Центрируем их по центру */
+        margin-top: 20px; /* Отступ сверху для отделения от таблицы */
+    }
+
+    /* Устанавливаем ширину таблицы */
+    .info {
+        margin-right: -150px;
+        width: 100%;
+        margin-bottom: 20px; /* Отступ под таблицей */
+    }
+}

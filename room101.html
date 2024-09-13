@@ -83,5 +83,12 @@
             </div>
         </div>
     </footer>
+    <script>
+        const carousel = document.querySelector('.carousel-wrapper');
+        carousel.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            carousel.scrollLeft += e.deltaY; // Прокручиваем по горизонтали
+        });
+    </script>    
 </body>
 </html>
