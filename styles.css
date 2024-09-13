@@ -386,8 +386,8 @@ td {
 .carousel-wrapper {
     position: relative;
     overflow: hidden;
-    /* width: 100%;
-    max-width: 900px; */
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto;
     overflow-x: auto;
     white-space: nowrap;
@@ -601,7 +601,7 @@ td {
 
     /* Устанавливаем ширину таблицы */
     .info {
-        margin-right: -150px;
+        margin-right: -3px;
         width: 100%;
         margin-bottom: 20px; /* Отступ под таблицей */
     }
@@ -647,52 +647,50 @@ td {
         text-align: left;
         border: 1px solid #ddd;
     }
+
+    table {
+        min-width: 300px; /* Минимальная ширина таблицы */
+        width: auto; /* Автоматическая ширина */
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 5px; /* Уменьшаем отступы */
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    /* Делаем таблицу адаптивной */
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
 
 
 
-
 @media (max-width: 768px) {
-    /* Контейнер для карусели */
-    .carousel-wrapper {
-        overflow-x: auto;
-        white-space: nowrap;
-        
-    }
-
-    .carousel {
-        display: inline-block;
-        white-space: nowrap; /* Не переносим элементы */
-    }
-
-    /* Минимальная ширина таблицы для прокрутки */
-    table {
-        min-width: 600px; /* Задаем минимальную ширину для карусели */
-        width: auto;
-        border-collapse: collapse;
-    }
-
-    th, td {
-        padding: 10px;
-        text-align: left;
-        border: 1px solid #ddd;
-    }
-
-    /* Аватар и форма для прикрепления документов */
-    .image {
-        width: 100%; /* Аватар и форма будут занимать всю ширину */
+    .header-room {
         display: flex;
-        flex-direction: column; /* Вертикальное расположение аватара и формы */
-        align-items: center; /* Центрируем их по центру */
-        margin-top: 20px; /* Отступ сверху для отделения от таблицы */
+        flex-direction: row; /* Горизонтальное расположение элементов */
+        align-items: center; /* Выровнять по вертикали */
+        justify-content: center; /* Центрировать логотип и текст */
+        margin-top: 10px;
+        margin-right: 50px; 
+        margin-left: 100px;
     }
 
-    /* Устанавливаем ширину таблицы */
-    .info {
-        margin-right: -150px;
-        width: 100%;
-        margin-bottom: 20px; /* Отступ под таблицей */
+    .logo {
+        width: 100px; /* Уменьшаем размер логотипа для мобильных */
+        height: auto;
+        margin-right: 10px; /* Отступ между логотипом и текстом */
+    }
+
+    h1 {
+        font-size: 18px; /* Уменьшаем размер текста для мобильных */
+        margin: 0;
     }
 }

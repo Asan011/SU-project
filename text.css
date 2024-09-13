@@ -41,3 +41,40 @@
         margin-bottom: 20px; /* Отступ под таблицей */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .header-room {
+        display: flex;
+        flex-direction: row; /* Горизонтальное расположение элементов */
+        align-items: center; /* Выровнять по вертикали */
+        justify-content: center; /* Центрировать логотип и текст */
+        margin-top: 10px;
+        margin-right: 50px;
+    }
+
+    .logo {
+        width: 100px; /* Уменьшаем размер логотипа для мобильных */
+        height: auto;
+        margin-right: 10px; /* Отступ между логотипом и текстом */
+        margin-left: 5px; 
+    }
+
+    h1 {
+        font-size: 18px; /* Уменьшаем размер текста для мобильных */
+        margin: 0;
+    }
+}
