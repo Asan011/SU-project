@@ -171,7 +171,7 @@ button.main2:hover {
 
 @media (max-width: 768px) {
     body {
-        height: 432vh;
+        height: 100vh;
     }
 
     .buttons-mobile-buttons {
