@@ -1,0 +1,745 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 300px;
+    margin-bottom: 100px;
+}
+
+.main-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 210px;
+    margin-bottom: 100px;
+}
+
+.floor0-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 240px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+}
+
+ .buttons-floor1 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+ }
+
+button {
+    padding: 15px 25px;
+    margin: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #740526;
+}
+
+/*buttons img*/
+button.main {
+    padding: 100px 120px;
+    margin: 10px;
+    border: none;
+    background-color: #007bff;
+    background-image: url('images/floor1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    height: 150px;
+}
+
+button.main:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+button.main2 {
+    padding: 100px 120px;
+    margin: 10px;
+    border: none;
+    background-color: #007bff;
+    background-image: url('images/floor2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    height: 150px;
+}
+
+button.main2:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+button.main3 {
+    padding: 100px 120px;
+    margin: 10px;
+    border: none;
+    background-color: #007bff;
+    background-image: url('images/floor3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    height: 150px;
+}
+
+button.main3:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+button.main4 {
+    padding: 100px 120px;
+    margin: 10px;
+    border: none;
+    background-color: #007bff;
+    background-image: url('images/floor4.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    height: 150px;
+}
+
+button.main4:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+button.main5 {
+    padding: 100px 120px;
+    margin: 10px;
+    border: none;
+    background-color: #007bff;
+    background-image: url('images/floor4.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    height: 150px;
+}
+
+button.main5:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+.info {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.info {
+    flex: 1;
+    margin-right: 250px;
+}
+
+.image {
+    text-align: right;
+}
+
+.image img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.upload-form {
+    margin-top: 10px;
+}
+
+.upload-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.upload-button:hover {
+    background-color: #0367d3;
+}
+
+#file-upload {
+    display: none;
+}
+
+.rooms {
+    position: relative;
+    left: -440px;
+}
+
+header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.header-room {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.main {
+    padding: 75px 85px;
+    margin: 23px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.image {
+    text-align: center;
+}
+
+.avatar {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 100px;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.date {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+table {
+    min-width: 600px;
+    width: auto;
+    border-collapse: collapse;
+
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+td {
+    font-size: 16px;
+}
+
+.custom-footer {
+    background-color: #111;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.footer-icons a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-icons {
+        margin-top: 10px;
+    }
+}
+
+.custom-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+}
+
+.room-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.room-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-container p {
+    font-size: 16px;
+    color: #007bff;
+    font-weight: bold;
+    margin: 0;
+}
+
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel {
+    display: inline-block;
+}
+
+.carousel-item {
+    display: inline-block;
+    width: 300px;
+    margin-right: 20px;
+    min-width: 300px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.scrollbar {
+    height: 5px;
+    background-color: #ddd;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.scrollbar-thumb {
+    height: 100%;
+    width: 20%;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+
+.back-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column; /* Вертикальное расположение кнопок */
+    }
+    .buttons-floor1 {
+        flex-direction: column;
+    }
+    .main-container {
+        margin-top: 1200px;
+        margin-bottom: 100px;
+    }
+    .logo {
+        margin-left: -85px;
+    }
+    .custom-footer {
+        padding: 20px 0; /* Уменьшение внутреннего отступа */
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column; /* Выровнять все по центру вертикально */
+        justify-content: center;
+        align-items: center; /* Центрирование элементов футера */
+    }
+
+    .footer-icons {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Упорядочить иконки в несколько строк при необходимости */
+        gap: 15px; /* Отступы между иконками */
+    }
+
+    /* Исправляем логотип M205 */
+    .custom-logo {
+        position: static; /* Убираем абсолютное позиционирование */
+        margin-top: 10px;
+        font-size: 18px; /* Уменьшаем размер текста логотипа для мобильных */
+    }
+
+    .footer-content p {
+        margin-bottom: 10px; /* Добавляем отступ снизу для текста */
+        font-size: 14px; /* Уменьшаем размер шрифта на мобильных */
+    }
+
+    .floor0-container {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .carousel-wrapper {
+        display: none; /* Отключаем карусель на мобильных */
+    }
+
+    /* Вертикальное расположение кнопок на втором этаже */
+    .mobile-buttons {
+        display: flex;
+        flex-direction: column; /* Вертикальное расположение кнопок */
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Стили для кнопок на мобильной версии */
+    button.main2 {
+        width: 100%; /* Кнопки на всю ширину */
+        max-width: 300px; /* Ограничиваем максимальную ширину */
+        height: 150px;
+        margin: 10px 0; /* Отступы между кнопками */
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Центрирование текста под кнопками */
+    .button-container p {
+        text-align: center;
+    }
+    .buttons-mobile-buttons {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .buttons-mobile-buttons3 {
+        margin-top: 1050px;
+        margin-bottom: 100px;
+    }
+    .buttons-mobile-buttons4 {
+        margin-top: 1550px;
+        margin-bottom: 100px;
+    }
+}
+
+
+/* Для ПК версии карусель будет активна, скрываем мобильные кнопки */
+@media (min-width: 769px) {
+    .buttons-mobile-buttons {
+        display: none; /* Скрываем мобильные кнопки на ПК */
+    }
+    .buttons-mobile-buttons3 {
+        display: none; /* Скрываем мобильные кнопки на ПК */
+    }
+    .buttons-mobile-buttons4 {
+        display: none; /* Скрываем мобильные кнопки на ПК */
+    }
+    .carousel-wrapper {
+        display: block; /* Включаем карусель на ПК */
+    }
+}   
+
+
+
+
+@media (max-width: 768px) {
+    /* Центрируем и добавляем отступы для логотипа */
+    .header-room {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px; /* Отступ под логотипом */
+    }
+
+    /* Отступы для таблицы на мобильных */
+    .info {
+        margin-top: 400px; /* Отступ между логотипом и таблицей */
+        width: 100%; /* Ширина таблицы */
+    }
+
+    /* Стиль для таблицы, чтобы она не сливалась с логотипом */
+    table {
+        /* width: 100%; Таблица будет растягиваться на всю ширину экрана */
+        margin-bottom: 20px; /* Отступ под таблицей */
+        font-size: 14px; /* Размер шрифта для мобильных устройств */
+        border-collapse: collapse;
+    }
+
+    /* Центрируем текст в таблице для мобильных */
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    /* Делаем контейнеры вертикальными */
+    .content {
+        display: flex;
+        flex-direction: column; /* Вертикальное расположение всех элементов */
+        align-items: center; /* Центрирование элементов */
+    }
+
+    /* Аватар и форма для прикрепления документов */
+    .image {
+        width: 100%; /* Аватар и форма будут занимать всю ширину */
+        display: flex;
+        flex-direction: column; /* Вертикальное расположение аватара и формы */
+        align-items: center; /* Центрируем их по центру */
+        margin-top: 20px; /* Отступ сверху для отделения от таблицы */
+    }
+
+    /* Устанавливаем ширину таблицы */
+    .info {
+        margin-right: -3px;
+        width: 100%;
+        margin-bottom: 20px; /* Отступ под таблицей */
+    }
+
+    /* Таблица */
+    table {
+        width: 100%; /* Таблица будет занимать всю ширину экрана */
+    }
+
+    /* Размер аватарки */
+    .avatar {
+        max-width: 100px; /* Устанавливаем максимальную ширину аватарки */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    /* Отступ для кнопки загрузки */
+    .upload-form {
+        margin-top: 10px;
+    }
+
+    
+
+    .carousel {
+        display: inline-block;
+        white-space: nowrap; /* Не переносим элементы */
+    }
+
+    /* Минимальная ширина таблицы для прокрутки */
+    table {
+        min-width: 600px; /* Задаем минимальную ширину для карусели */
+        width: auto;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    table {
+        min-width: 300px; /* Минимальная ширина таблицы */
+        width: auto; /* Автоматическая ширина */
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 5px; /* Уменьшаем отступы */
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    /* Делаем таблицу адаптивной */
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    body {
+        /* font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        height: 150vh;
+        /* margin: 0; */
+    }
+    .header-room {
+        display: flex;
+        flex-direction: row; /* Горизонтальное расположение элементов */
+        align-items: center; /* Выровнять по вертикали */
+        justify-content: center; /* Центрировать логотип и текст */
+        margin-top: 10px;
+        margin-right: 50px; 
+        margin-left: 100px;
+    }
+
+    .logo {
+        width: 100px; /* Уменьшаем размер логотипа для мобильных */
+        height: auto;
+        margin-right: 10px; /* Отступ между логотипом и текстом */
+    }
+
+    h1 {
+        font-size: 18px; /* Уменьшаем размер текста для мобильных */
+        margin: 0;
+    }
+
+    .container {
+        text-align: center;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 300px;
+        margin-bottom: 100px;
+    }
+    
+
+}
