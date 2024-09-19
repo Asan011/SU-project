@@ -177,7 +177,6 @@ button.main2:hover {
     .container {
         padding-top: 10px;
         min-height: 100vh;
-        padding-bottom: 50px;
     }
 
     .buttons-mobile-buttons {
@@ -241,6 +240,7 @@ button.main2:hover {
 
     .logo {
         margin-left: -85px;
+        margin-bottom: 0px;
     }
 
     .footer-content p {

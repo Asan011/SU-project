@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 300px;
+    margin-bottom: 100px;
+}
+
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel {
+    display: inline-block;
+}
+
+.carousel-item {
+    display: inline-block;
+    width: 300px;
+    margin-right: 20px;
+    min-width: 300px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.back-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}
+
+button.main4 {
+    padding: 100px 120px;
+    margin: 10px;
+    border: none;
+    background-color: #007bff;
+    background-image: url('images/floor2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    height: 150px;
+}
+
+button.main4:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+.room-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.custom-footer {
+    background-color: #111;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.footer-icons a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
+}
+
+.custom-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+}
+
+.button-container p {
+    font-size: 16px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+    }
+
+    .container {
+        padding-top: 10px;
+        min-height: 100vh;
+    }
+
+    .buttons-mobile-buttons {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    h1 {
+        margin-top: 10px;
+    }
+
+    .button-container p {
+        text-align: center;
+    }
+
+    button.main4 {
+        width: 100%; /* Кнопки на всю ширину */
+        max-width: 300px; /* Ограничиваем максимальную ширину */
+        height: 150px;
+        margin: 10px 0; /* Отступы между кнопками */
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .carousel-wrapper {
+        display: none; /* Отключаем карусель на мобильных */
+    }
+
+    .custom-footer {
+        padding: 20px 0; /* Уменьшение внутреннего отступа */
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column; /* Выровнять все по центру вертикально */
+        justify-content: center;
+        align-items: center; /* Центрирование элементов футера */
+    }
+
+    .footer-icons {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Упорядочить иконки в несколько строк при необходимости */
+        gap: 15px; /* Отступы между иконками */
+    }
+    
+    .custom-logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20px;
+    }
+
+    .custom-logo {
+        position: static; /* Убираем абсолютное позиционирование */
+        margin-top: 10px;
+        font-size: 18px; /* Уменьшаем размер текста логотипа для мобильных */
+    }
+
+    .logo {
+        margin-left: -85px;
+        margin-bottom: 0px;
+    }
+
+    .footer-content p {
+        margin-bottom: 10px; /* Добавляем отступ снизу для текста */
+        font-size: 14px; /* Уменьшаем размер шрифта на мобильных */
+    }
+
+}
+
+
+@media (min-width: 769px) {
+    .buttons-mobile-buttons4 {
+        display: none; /* Скрываем мобильные кнопки на ПК */
+    }
+}   
