@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory - 001 cabinet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-room">
+            <a href="index.html">
+            <img src="images/salymbekov-logo.png" alt="Логотип" class="logo"></a>
+            <h1>Inventory System</h1>
+        </div>
+    </header>
+    <div class="container">
+        <h1>001 cabinet</h1>
+        <div class="content">
+            <div class="info">
+                <table>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>⠀⠀⠀⠀⠀Models</th>
+                    </tr>
+                    <tr>
+                        <td>Целых компьютеров</td>
+                        <td>⠀⠀16</td>
+                        <td>⠀⠀⠀⠀⠀CPU (CPU):
+                            AMD Ryzen 5 5600X</td>
+                    </tr>
+                    <tr>
+                        <td>Needs to be fixed</td>
+                        <td>⠀⠀10</td>
+                        <td>⠀⠀⠀⠀⠀Video card (GPU):
+                            NVIDIA GeForce RTX 3060</td>
+                    </tr>
+                    <tr>
+                        <td>Mouse</td>
+                        <td>⠀⠀12</td>
+                        <td>⠀⠀⠀⠀⠀RAM (RAM):
+                            16GB DDR4 (3200 MHz)</td>
+                    </tr>
+                    <tr>
+                        <td>Power cables</td>
+                        <td>⠀⠀14</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>HDMI cables</td>
+                        <td>⠀⠀15</td>
+                    </tr>
+                    <tr>
+                        <td>air conditioner</td>
+                        <td>⠀⠀13</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="image">
+                <img src="images/avatarka2.avif" alt="Аватар" class="avatar">
+                <p class="name">Name Surname</p>
+                <form class="upload-form">
+                    <label for="file-upload" class="upload-button">Attach document</label>
+                    <input id="file-upload" type="file" name="file">
+                </form>
+                <p class="date">Modified on date: 28.08.2024</p>
+            </div>
+        </div>
+        <a href="floor0.html" class="rooms"><button>Back to the offices</button></a>
+    </div>
+    <footer class="custom-footer">
+        <div class="footer-content">
+            <p>© 2024 Inventory System. All rights reserved</p>
+            <div class="footer-icons">
+                <h2 class="custom-logo">M205</h2>
+                <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/tik-tok.png" alt="TikTok"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const carousel = document.querySelector('.carousel-wrapper');
+        carousel.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            carousel.scrollLeft += e.deltaY; // Прокручиваем по горизонтали
+        });
+    </script>    
+</body>
+</html>

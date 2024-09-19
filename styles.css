@@ -47,8 +47,15 @@ h1 {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 0px;
 }
+
+ .buttons-floor1 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+ }
 
 button {
     padding: 15px 25px;
@@ -151,6 +158,28 @@ button.main4 {
 }
 
 button.main4:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+button.main5 {
+    padding: 100px 120px;
+    margin: 10px;
+    border: none;
+    background-color: #007bff;
+    background-image: url('images/floor4.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    height: 150px;
+}
+
+button.main5:hover {
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
 }
@@ -450,6 +479,9 @@ td {
     .buttons {
         flex-direction: column; /* Вертикальное расположение кнопок */
     }
+    .buttons-floor1 {
+        flex-direction: column;
+    }
     .main-container {
         margin-top: 1200px;
         margin-bottom: 100px;
@@ -520,7 +552,7 @@ td {
         text-align: center;
     }
     .buttons-mobile-buttons {
-        margin-top: 1600px;
+        margin-top: 100px;
         margin-bottom: 100px;
     }
     .buttons-mobile-buttons3 {
@@ -623,12 +655,7 @@ td {
         margin-top: 10px;
     }
 
-    /* Карусельный контейнер для таблицы */
-    .carousel-wrapper {
-        overflow-x: auto;
-        white-space: nowrap;
-
-    }
+    
 
     .carousel {
         display: inline-block;
@@ -673,6 +700,16 @@ td {
 
 
 @media (max-width: 768px) {
+    body {
+        /* font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        height: 150vh;
+        /* margin: 0; */
+    }
     .header-room {
         display: flex;
         flex-direction: row; /* Горизонтальное расположение элементов */
@@ -693,4 +730,16 @@ td {
         font-size: 18px; /* Уменьшаем размер текста для мобильных */
         margin: 0;
     }
+
+    .container {
+        text-align: center;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 300px;
+        margin-bottom: 100px;
+    }
+    
+
 }
