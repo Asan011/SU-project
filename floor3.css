@@ -247,6 +247,10 @@ button.main3:hover {
         margin-bottom: 10px; /* Добавляем отступ снизу для текста */
         font-size: 14px; /* Уменьшаем размер шрифта на мобильных */
     }
+    
+    .container h1 {
+        display: none;
+    }
 
 }
 
