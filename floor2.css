@@ -171,12 +171,22 @@ button.main2:hover {
 
 @media (max-width: 768px) {
     body {
-        height: 100vh;
+        height: auto;
+    }
+
+    .container {
+        padding-top: 10px;
+        min-height: 100vh;
+        padding-bottom: 50px;
     }
 
     .buttons-mobile-buttons {
         margin-top: 50px;
         margin-bottom: 100px;
+    }
+
+    h1 {
+        margin-top: 10px;
     }
 
     .button-container p {
