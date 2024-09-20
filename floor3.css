@@ -172,6 +172,7 @@ button.main3:hover {
 @media (max-width: 768px) {
     body {
         height: auto;
+        margin-top: -150px;
     }
 
     .container {
