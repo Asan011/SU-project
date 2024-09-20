@@ -171,7 +171,7 @@ button.main2:hover {
 
 @media (max-width: 768px) {
     body {
-        height: auto;
+        height: 90vh;
     }
 
     .container {
