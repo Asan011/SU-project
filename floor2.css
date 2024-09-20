@@ -64,7 +64,7 @@ header h1 {
 .carousel-item img {
     width: 100%;
     max-width: 300px;
-    height: auto;
+    height: 200px; /* поменял auto*/
     border-radius: 10px;
 }
 
