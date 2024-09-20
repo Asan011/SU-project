@@ -707,7 +707,7 @@ td {
         flex-direction: column;
         justify-content: center;
         align-items: center; */
-        height: 150vh;
+        height: 90vh;
         /* margin: 0; */
     }
     .header-room {
@@ -740,6 +740,4 @@ td {
         margin-top: 300px;
         margin-bottom: 100px;
     }
-    
-
 }
