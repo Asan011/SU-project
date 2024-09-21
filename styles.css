@@ -192,12 +192,12 @@ button.main5:hover {
 .content {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .info {
     flex: 1;
-    margin-right: 250px;
+    margin-right: 100px;
 }
 
 .image {
@@ -234,7 +234,7 @@ button.main5:hover {
 
 .rooms {
     position: relative;
-    left: -440px;
+    left: -370px;
 }
 
 header {
